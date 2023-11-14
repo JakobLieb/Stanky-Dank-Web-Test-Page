@@ -1,0 +1,47 @@
+/* Reset some default styles */
+body, h1, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+#cart {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

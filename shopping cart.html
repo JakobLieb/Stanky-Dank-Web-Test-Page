@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="shopping-cart-styles.css">
+    <a href="test index.html">Back Home</a>
+</head>
+<body>
+    <h1>Your Shopping Cart</h1>
+
+    <section id="cart">
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My 100% Non-Suspicious American Online Store of Goodness. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to your main JavaScript file if you have one -->
+    <script src="main.js"></script>
+
+    <script>
+        // Initialize cart on the shopping cart page
+        document.addEventListener("DOMContentLoaded", function () {
+            updateCart(); // Update cart display
+        });
+    </script>
+</body>
+</html>

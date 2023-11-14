@@ -1,0 +1,60 @@
+/* Reset some default styles */
+body, h1, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: purple;
+    padding: 20px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+#cart {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
