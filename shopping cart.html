@@ -5,7 +5,6 @@
     <title>Shopping Cart</title>
     <!-- Link to your main CSS file -->
     <link rel="stylesheet" href="shopping-cart-styles.css">
-    <a href="index.html">Back Home</a>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKRF888G2"></script>
@@ -18,28 +17,32 @@
 </script>
 </head>
 <body>
-    <h1>Your Shopping Cart</h1>
+    <a href="index.html">Back Home</a>
 
-    <section id="cart">
-        <ul id="cart-items">
-            <!-- Cart items will be dynamically added here -->
-        </ul>
-        <p>Total: $<span id="cart-total">0.00</span></p>
-        <button onclick="checkout()">Checkout</button>
-    </section>
+    <main>
+        <h1>Your Shopping Cart</h1>
 
-    <footer>
-        <p>&copy; 2023 My 100% Non-Suspicious American Online Store of Goodness. All rights reserved.</p>
-    </footer>
+        <section id="cart">
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
 
-    <!-- Link to your main JavaScript file if you have one -->
-    <script src="main.js"></script>
+        <footer>
+            <p>&copy; 2023 My 100% Non-Suspicious American Online Store of Goodness. All rights reserved.</p>
+        </footer>
 
-    <script>
-        // Initialize cart on the shopping cart page
-        document.addEventListener("DOMContentLoaded", function () {
-            updateCart(); // Update cart display
-        });
-    </script>
+        <script>
+            // Initialize cart on the shopping cart page
+            document.addEventListener("DOMContentLoaded", function () {
+                updateCart(); // Update cart display
+            });
+        </script>
+        
+        <!-- Link to your main JavaScript file if you have one -->
+        <script src="main.js"></script>
 </body>
 </html>

@@ -31,6 +31,7 @@ function updateCart() {
         const li = document.createElement("li");
         li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
         cartItemsElement.appendChild(li);
+        total += item.price;
     });
 
     // Calculate and display the total
@@ -46,8 +47,8 @@ function checkout() {
     // Add your checkout logic here
     if (cart.length === 0) {
         alert("Your cart is empty. You should add something if you want to check out.");
-    } else{
-    alert("Thank you for your purchase!");
+    } else {
+    alert("Thank you for your purchase! Don't get raided by the feds!");
     // Clear the cart after checkout
     cart = [];
     updateCart();
@@ -55,16 +56,15 @@ function checkout() {
 }
 
 // Add event listeners to "Add to Cart" buttons
-document.addEventListener("DOMContentLoaded", function () {
+function handleAddToCartButtons() {
     const addToCartButtons = document.querySelectorAll(".product button");
     addToCartButtons.forEach((button, index) => {
-        button.addEventListener("click", function () {
-            addToCart(index);
-        });
+        button.addEventListener("click", () => addToCart(index));
     });
-});
+}
 
 //Initializes cart on the shopping cart page
 document.addEventListener("DOMContentLoaded", function () {
+    handleAddToCartButtons();
     updateCart(); //Updates the cart display
 });
