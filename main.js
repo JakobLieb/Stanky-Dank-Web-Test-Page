@@ -31,11 +31,11 @@ function updateCart() {
         const li = document.createElement("li");
         li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
         cartItemsElement.appendChild(li);
-        total += item.price;
     });
 
     // Calculate and display the total
-    const total = cart.reduce((acc, item) => acc + item.price, 0);
+    let total = 0;
+    total = cart.reduce((acc, item) => acc + item.price, 0);
     cartTotalElement.textContent = total.toFixed(2);
 
     // Saves the cart to localStorage
@@ -59,7 +59,9 @@ function checkout() {
 function handleAddToCartButtons() {
     const addToCartButtons = document.querySelectorAll(".product button");
     addToCartButtons.forEach((button, index) => {
-        button.addEventListener("click", () => addToCart(index));
+        button.addEventListener("click", function () {
+            addToCart(index);
+        });
     });
 }
 
