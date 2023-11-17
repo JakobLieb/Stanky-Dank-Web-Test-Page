@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Test Page</title>
-   <!-- Google tag (gtag.js) -->
+
+<!-- Link to your main CSS file -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKRF888G2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -12,16 +16,12 @@
 
   gtag('config', 'G-MQKRF888G2');
     </script>
-<script src="main.js"></script>
-
-<!-- Link to your main CSS file -->
-<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Stanky Dank Web Test Page</h1>
     <header>
         <h1>My 100% Non-Suspicious American Online Store of Goodness</h1>
-        <p>Welcome to our online shop! Many good things to be had.</p>
+        <h3>Welcome to our online shop! Many good things to be had.</h3>
         <p>DISCLAIMER: This is simply a page used for testing Google Analytics. There is no actual store, and all products are meant to be humorous placeholders.</p>
     </header>
 
@@ -70,7 +70,7 @@
     </section>
 
     <section id="cart">
-        <a href="shopping cart.html">View Shopping Cart</a>
+        <a href="shopping cart.html" rel="noopener">View Shopping Cart</a>
         <ul id="cart-items">
             <!-- Cart items will be dynamically added here -->
         </ul>
@@ -81,5 +81,7 @@
     <footer>
         <p>&copy; 2023 My 100% Non-Suspicious American Online Store of Goodness. All rights reserved.</p>
     </footer>
+    <!-- Load JavaScript code -->
+    <script src="main.js"></script>
 </body>
 </html>
