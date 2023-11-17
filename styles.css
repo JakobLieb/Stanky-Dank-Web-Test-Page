@@ -58,3 +58,7 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+#cart a:visited {
+    color: orange; /* Change the color to orange */
+}
